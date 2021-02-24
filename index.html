@@ -13,19 +13,46 @@
     <p id="description">This is a survey to test out some functions</p>
 
     <form id="survey-form">
-      <label for="name">
+      <label id="name-label" for="name"> name
         <input type="text" placeholder="Enter your name" id="name" required>
       </label>
-      
-      <label for="email">
+      <label id="email-label" for="email"> email
         <input type="email" id="email" placeholder="Enter your email" required>
       </label>
 
-      <label for="number">
-        <input type="number"  id="number">
+      <label id="number-label" for="number"> number
+        <input type="number"  id="number" placeholder="Enter your number" min="0" max="10">
       </label>
 
+      <label for="dropdown">Choose a car:</label>
+        <select name="cars" id="dropdown">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="pineapple">pineapple</option>
+          <option value="orange">Orange</option>
+        </select>
+
+        <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="Motorcycle"> I have a Motorcycle</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="Vechile"> I have a Jeep</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="sea vessel"> I have a ship</label><br>
+
+<textarea></textarea>
+  <input id="submit" type="submit">
+
       <input type="submit">
+
+
     </form>
 
 
